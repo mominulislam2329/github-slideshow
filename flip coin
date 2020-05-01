@@ -1,0 +1,17 @@
+import random # random module will be imported
+def heads_tails(flips):
+    no_of_heads=0
+    no_of_tails=0
+    number=random.randrange(2)
+    for i in range(flips):  # for loop is like for i to iterate through range
+        #heads_tails(1)  # call the defined function
+        if number== 0: #if 0 then heads
+            no_of_heads +=1 # for counting number of heads
+            print (no_of_heads,'Head')
+        else:
+            no_of_tails +=1
+            print(no_of_tails,'tail')
+    print('no_of_heads', no_of_heads)
+    print('tails', no_of_tails)
+    return ;
+print(heads_tails(3))
